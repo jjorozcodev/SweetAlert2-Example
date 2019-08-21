@@ -16,8 +16,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="SweetAlert2/sweetalert2.min.css">
-        <script src="SweetAlert2/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="SweetAlert2/sweetalert2.min.css">
+    <script src="SweetAlert2/sweetalert2.min.js"></script>
+
+    <script src="functions.js"></script>
 </head>
 
 <body>
@@ -25,13 +27,13 @@
         <br>
         <h1>Example with Sweet Alert 2</h1>
         <br>
-        <button class="btn btn-danger">
+        <button class="btn btn-danger" onclick="showError()">
             Error!
         </button>
-        <button class="btn btn-success">
+        <button class="btn btn-success" onclick="showSuccess()">
             Success!
         </button>
-        <button class="btn btn-warning">
+        <button class="btn btn-warning" onclick="showConfirm()">
             Confirm!
         </button>
     </div>
